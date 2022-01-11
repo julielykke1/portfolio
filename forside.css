@@ -1,0 +1,189 @@
+/* ....... Section 2 - porfolio ........ */
+* {
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  box-sizing: border-box;
+}
+/* Mobil-version */
+
+/* First_section Loop-video */
+
+#first_section {
+  width: 100%;
+  height: 75vh;
+  background-image: url(tema1/image.webp);
+  background-size: cover;
+}
+
+#first_section .section_wrapper {
+  display: flex;
+  justify-content: center;
+  height: 75vh;
+}
+
+#first_section .col_txt {
+  text-align: center;
+  font-size: 5rem;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  border-radius: 0.2rem;
+}
+
+#first_section h1 {
+  font-size: 6rem;
+}
+
+/* Second_section - Button  */
+.butt_1 {
+  display: inline-block;
+  padding: 0.35rem 1.2rem;
+  border: 0.2rem solid #e4ddd4;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  background-color: #e4ddd4;
+  text-align: left;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.butt_1:hover {
+  color: #000000;
+  background-color: #d3c3ae;
+  border: 0.2rem solid #d3c3ae;
+}
+
+/* Butt_2  */
+#third_section .button {
+  margin-top: 1rem;
+}
+.butt_2 {
+  display: inline-block;
+  padding: 0.35rem 1.2rem;
+  border: 0.2rem solid white;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  background-color: white;
+  text-align: left;
+  transition: all 0.2s;
+  width: 35%;
+}
+
+.butt_2:hover {
+  color: #000000;
+  background-color: #c4e1f2;
+  border: 0.2rem solid#c4e1f2;
+}
+
+.butt_2 h2,
+.butt_1 h2 {
+  padding: 0;
+}
+
+/* Tredje sektion */
+
+#third_section {
+  background-color: #a3bfd9;
+}
+
+#third_section img {
+  width: 80%;
+}
+
+.col_txt {
+  align-items: center;
+  margin-top: 9.375rem;
+}
+/* Flyvemaskine!! */
+
+/* Design af Web-version */
+
+@media (min-width: 600px) {
+  #second_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 20px;
+  }
+
+  #second_section h1 {
+    color: black;
+    margin: 20px;
+    padding-top: 10px;
+  }
+
+  #second_section .element_1 {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    text-align: center;
+  }
+
+  #second_section .element_3 {
+    grid-column: 2/3;
+    grid-row: 1/1;
+    text-align: center;
+  }
+
+  #second_section .element_5 {
+    grid-column: 3/4;
+    grid-row: 1/1;
+    text-align: center;
+  }
+
+  /* butt_1 placering i center*/
+  .col_butt {
+    display: flex;
+    justify-content: center;
+  }
+  .butt_1 {
+    text-align: center;
+  }
+
+  /* butt_2 */
+  .butt_2 {
+    text-align: center;
+  }
+  /* Tredje sektion */
+
+  #third_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    padding: 15px;
+  }
+
+  /* Flyvemaskine */
+  #container {
+    width: 35%;
+    aspect-ratio: 8/4;
+    position: relative;
+    bottom: -36rem;
+    left: -15rem;
+    animation: flyv 5s linear infinite;
+  }
+
+  #sprite {
+    width: 100%;
+    aspect-ratio: 8/4;
+    background-image: url(SVG/flyvemaskine.svg);
+    background-size: cover;
+  }
+
+  /* animation 1 */
+  @keyframes flyv {
+    10% {
+      transform: translateX(0px) translateY(0px);
+    }
+    40% {
+      transform: translateX(600px) translateY(-100px);
+    }
+    100% {
+      transform: translateX(1700px) translateY(-400px);
+    }
+  }
+}

@@ -1,0 +1,57 @@
+img {
+  width: 100%;
+  display: block;
+}
+* {
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  box-sizing: border-box;
+}
+
+h1,
+.section_wrapper {
+  margin: 1.25rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+footer {
+  background-color: #c4e1f2;
+}
+
+#first_section .section_wrapper {
+  margin-bottom: 1.875rem;
+}
+
+/* Webversion, styling  */
+
+@media (min-width: 600px) {
+  #first_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.25rem;
+    justify-items: center;
+  }
+
+  img {
+    width: 65%;
+  }
+
+  /* Hover effekt */
+  .photo {
+    transform: scale(1);
+    transition: transform 0.5s;
+  }
+
+  .photo:hover {
+    transform: scale(1.2);
+  }
+
+  .txt {
+    display: flex;
+    justify-content: center;
+  }
+}

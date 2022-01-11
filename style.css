@@ -1,0 +1,306 @@
+img {
+  width: 100%;
+  display: block;
+  border-radius: 0.2rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  box-sizing: border-box;
+}
+
+/* Logo */
+.logo img {
+  width: 60%;
+}
+
+.section_wrapper {
+  margin: 1.25rem;
+}
+
+/* Font styles og size */
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: #a3bfd9;
+  padding-bottom: 0.625rem;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 1.688rem;
+  color: black;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 1.375rem;
+  color: black;
+  padding-bottom: 0.3rem;
+}
+
+h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: black;
+  padding-bottom: 0.2rem;
+}
+
+h5 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #a3bfd9;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: black;
+  padding-bottom: 0.2rem;
+  line-height: 1.4rem;
+}
+
+/* Style af fonts i links og a (knapper og lister) % header */
+li {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 1.2rem;
+  color: black;
+  text-decoration: none;
+}
+a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: black;
+  text-decoration: none;
+}
+
+/* Footer */
+
+footer .section_wrapper {
+  margin-bottom: 0;
+}
+
+footer .col_1 {
+  display: flex;
+  margin-bottom: 0;
+  padding: 10px;
+}
+footer .col_1 p {
+  padding-top: 0.188rem;
+  padding-left: 0.5rem;
+}
+
+footer .col_2 {
+  padding: 10px;
+}
+footer .col_2 .element_1 {
+  display: flex;
+}
+footer .col_2 .element_1 p {
+  padding-top: 0.938rem;
+  padding-left: 0.5rem;
+}
+
+footer .col_2 .element_2 {
+  display: flex;
+}
+footer.element_2 p {
+  padding-top: 0.938rem;
+  padding-left: 0.5rem;
+}
+
+footer .col_2 .element_3 {
+  display: flex;
+}
+footer .col_2 .element_3 p {
+  padding-top: 0.938rem;
+  padding-left: 0.5rem;
+}
+
+footer .col_3 {
+  display: flex;
+}
+footer .col_3 img {
+  width: 35%;
+}
+
+/* Footer */
+@media (min-width: 600px) {
+  .section_wrapper {
+    margin: 1.25rem;
+  }
+  footer .section_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  /* Column 1 */
+
+  footer .col_1 {
+    grid-area: 1 / 1 / 2 / 2;
+    border-right: solid 0.8px black;
+    margin: 15px;
+    margin-bottom: 0;
+    padding: 10px;
+    display: flex;
+  }
+  footer .col_1 p {
+    padding-top: 0.188rem;
+    padding-left: 0.5rem;
+  }
+  /* Column 2 */
+  footer .col_2 {
+    grid-area: 1 / 2 / 2 / 3;
+    border-right: solid 0.8px black;
+    margin: 15px;
+    margin-bottom: 0;
+    padding: 10px;
+    display: grid;
+    gap: 0.5rem;
+  }
+  footer .col_2 .element_1 {
+    display: flex;
+  }
+  footer .element_1 p {
+    padding-top: 0.938rem;
+    padding-left: 0.5rem;
+  }
+
+  footer .col_2 .element_2 {
+    display: flex;
+  }
+  footer .element_2 p {
+    padding-top: 0.938rem;
+    padding-left: 0.5rem;
+  }
+
+  footer .col_2 .element_3 {
+    display: flex;
+  }
+  footer .element_3 p {
+    padding-top: 0.938rem;
+    padding-left: 0.5rem;
+  }
+  /* Column 3 */
+  footer .col_3 {
+    grid-area: 1 / 3 / 2 / 4;
+    margin: 15px;
+    margin-bottom: 0;
+    padding: 10px;
+  }
+
+  footer .col_3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer.col_3 img {
+    width: 100%;
+  }
+}
+
+/* ......... Menu design (inkl. burgermenu ........ */
+
+header a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #a3bfd9;
+  text-decoration: none;
+}
+
+.logo a {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: blue;
+}
+
+/* Selve headeren */
+header {
+  background: none;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  padding-bottom: 0.6rem;
+  padding-top: 1rem;
+  gap: 20px 40px;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 50px;
+}
+
+/* burgermenu */
+.toggle-btn {
+  display: none;
+}
+
+/* Burgermenu, når skærmen er MAX 600 px. Altså alt dette foregår i mobil */
+@media (max-width: 600px) {
+  .toggle-btn {
+    background: transparent;
+    border: none;
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 0.25rem;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.shown {
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: column;
+  }
+
+  header a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #a3bfd9;
+    text-decoration: none;
+  }
+
+  .menu-icons {
+    width: 100%;
+    height: 100%;
+  }
+
+  .toggle-btn.open .burger,
+  .close {
+    display: none;
+  }
+
+  .toggle-btn.open .close,
+  .burger {
+    display: block;
+  }
+}

@@ -1,0 +1,146 @@
+img {
+  width: 100%;
+  display: block;
+  border-radius: 0.2rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #c4e1f2;
+}
+
+/* Mobil */
+/* First_section */
+#first_section {
+  width: 100%;
+  height: 70vh;
+  background-image: url(tema1/image.webp);
+  background-size: cover;
+}
+
+#first_section .section_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+#first_section .col_txt {
+  text-align: center;
+}
+/* Second_section */
+#second_section .section_wrapper {
+  display: grid;
+  gap: 1rem;
+}
+/* Col_narrow */
+#second_section .col_narrow {
+  background-color: #e4ddd4;
+  padding-left: 0.8rem;
+}
+#second_section .col_narrow h2 {
+  margin-left: 0.8rem;
+  margin-right: 4rem;
+  border-bottom: solid 0.1rem white;
+}
+/* Ikoner  */
+#second_section .føds {
+  display: flex;
+}
+#second_section .amager {
+  display: flex;
+}
+#second_section .mail {
+  display: flex;
+}
+#second_section h4 {
+  padding-left: 0.6rem;
+  padding-top: 0.6rem;
+  font-size: 1rem;
+}
+
+/* Style af liste */
+#second_section li {
+  list-style: none;
+  padding: 1.5rem;
+}
+
+/* Skills */
+.skills h3 {
+  margin-left: 0.8rem;
+}
+.skills .procent {
+  position: relative;
+  width: 100%;
+  height: 0.4rem;
+  background-color: white;
+  display: block;
+  margin-top: 0.2rem;
+}
+
+.skills div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: black;
+}
+/* Col_wide */
+#second_section .col_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#second_section .svg {
+  width: 5rem;
+  align-content: center;
+  margin-top: 2rem;
+}
+
+#second_section .uddannelse h2 {
+  margin-top: 1rem;
+  margin-left: 0.8rem;
+}
+#second_section .box {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  gap: 0.8rem;
+}
+#second_section .box h4 {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#second_section .info {
+  min-width: 8rem;
+}
+#second_section .txt p {
+  padding-top: 0.6rem;
+}
+
+/* Webversion */
+@media (min-width: 600px) {
+  /* First_section */
+  /* Second_section */
+  #second_section .section_wrapper {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  #second_section .col_narrow {
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+  #second_section .col_wide {
+    grid-column: 2/3;
+  }
+  #second_section .info {
+    min-width: 15rem;
+  }
+}
