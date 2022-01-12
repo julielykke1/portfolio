@@ -35,14 +35,6 @@ img {
   padding: 0rem 1rem;
 }
 
-/* Sørger for en fin placering af splash-billedet i mobil-version*/
-@media (max-width: 600px) {
-  #first_section {
-    background-image: url(tema2/splash.png);
-    background-position: 30%;
-  }
-}
-
 #second_section h3 {
   margin-top: 0.5rem;
 }
@@ -66,7 +58,7 @@ p {
   border-radius: 0.2rem;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   background-color: #c4e1f2;
   text-align: center;

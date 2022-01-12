@@ -25,6 +25,16 @@ footer {
 #first_section .section_wrapper {
   margin-bottom: 1.875rem;
 }
+#first_section .section_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  justify-items: center;
+}
+.txt {
+  display: flex;
+  justify-content: center;
+}
 
 /* Webversion, styling  */
 
@@ -48,10 +58,5 @@ footer {
 
   .photo:hover {
     transform: scale(1.2);
-  }
-
-  .txt {
-    display: flex;
-    justify-content: center;
   }
 }

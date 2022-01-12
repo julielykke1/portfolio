@@ -69,16 +69,24 @@ footer {
 
 #fourth_section .col {
   padding: 2rem;
+  padding-top: 0;
 }
 #fourth_section .section_wrapper {
   margin-top: 0;
 }
+#fourth_section .info {
+  margin: 1.25rem;
+  padding-top: 1.25rem;
+}
 
 #fifth_section h2 {
   margin: 1rem;
+  margin-bottom: 0;
+  padding-bottom: 0.2rem;
 }
 .fifth_h3 {
   margin: 1rem;
+  margin-top: 0;
 }
 
 /* third section slideshow */
@@ -232,6 +240,11 @@ footer {
 
   .photo:hover {
     transform: scale(1.2);
+  }
+  #fourth_section .info {
+    margin: 2rem;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
   }
 
   /* Fifth_section */
