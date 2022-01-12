@@ -10,10 +10,13 @@ img {
   box-sizing: border-box;
 }
 
-/* Logo */
+.far fa-heart {
+  color: #a3bfd9;
+}
+/* Logo
 .logo img {
   width: 60%;
-}
+} */
 
 .section_wrapper {
   margin: 1.25rem;
